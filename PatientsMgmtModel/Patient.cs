@@ -3,9 +3,4 @@
     public struct Patient
     {
     }
-
-    public struct Physician
-    {
-        
-    }
 }

@@ -7,5 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <DataGrid ItemsSource="{Binding Exams}">
+            
+        </DataGrid>
     </Grid>
 </Window>

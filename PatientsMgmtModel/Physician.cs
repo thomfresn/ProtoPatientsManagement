@@ -4,9 +4,4 @@
     {
         
     }
-
-    public struct Exam
-    {
-        
-    }
 }
