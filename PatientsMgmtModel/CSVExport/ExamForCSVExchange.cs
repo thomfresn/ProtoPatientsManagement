@@ -1,4 +1,4 @@
-namespace PatientsMgmtModel
+namespace PatientsMgmtModel.CSVExport
 {
     internal class ExamForCSVExchange
     {

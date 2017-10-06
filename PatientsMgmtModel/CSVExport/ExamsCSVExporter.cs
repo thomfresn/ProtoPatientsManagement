@@ -2,7 +2,7 @@
 using System.IO;
 using CsvHelper;
 
-namespace PatientsMgmtModel
+namespace PatientsMgmtModel.CSVExport
 {
     public static class ExamsCSVExporter
     {
