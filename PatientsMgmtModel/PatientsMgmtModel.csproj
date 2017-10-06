@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSVExport\ExamForCSVExport.cs" />
     <Compile Include="Exam.cs" />
+    <Compile Include="CSVExport\ExamsCSVExporter.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Physician.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

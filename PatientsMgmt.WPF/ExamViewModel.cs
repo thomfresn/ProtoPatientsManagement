@@ -12,11 +12,11 @@ namespace PatientsMgmt
             PatientName = patientName;
         }
 
-        public string PatientName { get; }
+        public string PatientName { get; set; }
 
-        public string ExamDate { get; }
-        public string PhysicianName { get;  }
+        public string ExamDate { get; set; }
+        public string PhysicianName { get; set; }
 
-        public string Report { get; }
+        public string Report { get; set; }
     }
 }
