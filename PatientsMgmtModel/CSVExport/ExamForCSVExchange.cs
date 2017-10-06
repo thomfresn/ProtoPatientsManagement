@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace PatientsMgmtModel.CSVExport
 {
     internal class ExamForCSVExchange
@@ -6,7 +8,7 @@ namespace PatientsMgmtModel.CSVExport
         {
             Report = exam.Report.ToString();
             PhysicianName = exam.Physician.Name;
-            ExamDate = exam.Date.ToString();
+            ExamDate = exam.Date.ToString(CultureInfo.InvariantCulture);
             PatientName = exam.Patient.Name;
         }
 

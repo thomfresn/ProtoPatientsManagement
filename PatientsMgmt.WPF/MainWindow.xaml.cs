@@ -1,17 +1,17 @@
 ﻿using PatientsMgmtModel;
+using PatientsMgmtModel.CSVExport;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows;
+using System.Globalization;
 using System.Windows.Input;
-using PatientsMgmtModel.CSVExport;
 
 namespace PatientsMgmt
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
@@ -29,14 +29,14 @@ namespace PatientsMgmt
 
     public class ExamsViewModel 
     {
-        private IEnumerable<Exam> exams;
+        private readonly IEnumerable<Exam> exams;
 
         public ExamsViewModel(IEnumerable<Exam> exams)
         {
             this.exams = exams;
-            foreach (Exam exam in exams)
+            foreach (Exam exam in this.exams)
             {
-                Exams.Add(new ExamViewModel(exam.Patient.Name, exam.Report.ToString(), exam.Date.ToString(), exam.Physician.Name));
+                Exams.Add(new ExamViewModel(exam.Patient.Name, exam.Report.ToString(), exam.Date.ToString(CultureInfo.CurrentCulture), exam.Physician.Name));
             }
         }
 
@@ -47,7 +47,7 @@ namespace PatientsMgmt
 
     public class ExportCSVCommand : ICommand
     {
-        private IEnumerable<Exam> exams;
+        private readonly IEnumerable<Exam> exams;
 
         public ExportCSVCommand(IEnumerable<Exam> exams)
         {

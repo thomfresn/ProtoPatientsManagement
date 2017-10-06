@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PatientsMgmt
+﻿namespace PatientsMgmt
 {
     public class ExamViewModel
     {
