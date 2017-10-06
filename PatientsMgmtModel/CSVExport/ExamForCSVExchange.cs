@@ -1,8 +1,8 @@
 namespace PatientsMgmtModel
 {
-    internal class ExamForCSVExport
+    internal class ExamForCSVExchange
     {
-        public ExamForCSVExport(Exam exam)
+        public ExamForCSVExchange(Exam exam)
         {
             Report = exam.Report.ToString();
             PhysicianName = exam.Physician.Name;

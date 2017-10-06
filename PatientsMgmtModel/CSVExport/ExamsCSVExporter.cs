@@ -8,29 +8,29 @@ namespace PatientsMgmtModel
     {
         public static void ExportExams(string filePath, IEnumerable<Exam> exams)
         {
-            ExamsForCSVExport examsForCsvExport = new ExamsForCSVExport(exams);
+            ExamsForCSVExchange examsForCsvExchange = new ExamsForCSVExchange(exams);
             using (StreamWriter streamWriter = new StreamWriter(filePath))
             {
                 var csv = new CsvWriter(streamWriter);
-                csv.WriteRecords(examsForCsvExport.Exams);
+                csv.WriteRecords(examsForCsvExchange.Exams);
             }
         }
     }
 
-    internal class ExamsForCSVExport
+    internal class ExamsForCSVExchange
     {
-        private readonly List<ExamForCSVExport> exportableExams = new List<ExamForCSVExport>();
+        private readonly List<ExamForCSVExchange> exportableExams = new List<ExamForCSVExchange>();
 
-        public ExamsForCSVExport(IEnumerable<Exam> exams)
+        public ExamsForCSVExchange(IEnumerable<Exam> exams)
         {
             foreach (Exam exam in exams)
             {
-                var exportableExam = new ExamForCSVExport(exam);
+                var exportableExam = new ExamForCSVExchange(exam);
                 exportableExams.Add(exportableExam);
             }
         }
 
-        public IEnumerable<ExamForCSVExport>Exams => exportableExams;
+        public IEnumerable<ExamForCSVExchange>Exams => exportableExams;
 
 
     }

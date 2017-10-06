@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSVExport\ExamForCSVExport.cs" />
+    <Compile Include="CSVExport\ExamForCSVExchange.cs" />
     <Compile Include="Exam.cs" />
     <Compile Include="CSVExport\ExamsCSVExporter.cs" />
     <Compile Include="Patient.cs" />
