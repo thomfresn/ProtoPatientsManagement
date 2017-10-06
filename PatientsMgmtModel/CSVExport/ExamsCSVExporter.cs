@@ -4,6 +4,7 @@ using CsvHelper;
 
 namespace PatientsMgmtModel.CSVExport
 {
+    //Uses CSVHelper library: https://joshclose.github.io/CsvHelper/
     public static class ExamsCSVExporter
     {
         public static void ExportExams(string filePath, IEnumerable<Exam> exams)
