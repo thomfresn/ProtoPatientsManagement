@@ -4,14 +4,8 @@
     {
         private readonly string report;
 
-        public Report(string report)
-        {
-            this.report = report;
-        }
+        public Report(string report) => this.report = report;
 
-        public override string ToString()
-        {
-            return report;
-        }
+        public override string ToString() => report;
     }
 }

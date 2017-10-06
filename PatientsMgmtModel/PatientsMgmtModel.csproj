@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSVExport\ExamForCSVExchange.cs" />
+    <Compile Include="CSVExport\ExamsForCSVExchange.cs" />
     <Compile Include="Exam.cs" />
     <Compile Include="CSVExport\ExamsCSVExporter.cs" />
     <Compile Include="Patient.cs" />
