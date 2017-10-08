@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientsMgmt.WPF", "Patient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientsMgmtModel", "PatientsMgmtModel\PatientsMgmtModel.csproj", "{42B43CDF-A8A3-49FF-B98F-A4B16B6C22CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientsMgntModelUnitTests", "PatientsMgntModelUnitTests\PatientsMgntModelUnitTests.csproj", "{22E06B9A-DF13-4D7F-8244-123B6DC45C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{42B43CDF-A8A3-49FF-B98F-A4B16B6C22CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B43CDF-A8A3-49FF-B98F-A4B16B6C22CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B43CDF-A8A3-49FF-B98F-A4B16B6C22CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E06B9A-DF13-4D7F-8244-123B6DC45C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E06B9A-DF13-4D7F-8244-123B6DC45C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E06B9A-DF13-4D7F-8244-123B6DC45C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E06B9A-DF13-4D7F-8244-123B6DC45C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
