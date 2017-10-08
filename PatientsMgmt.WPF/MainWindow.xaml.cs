@@ -58,7 +58,8 @@ namespace PatientsMgmt
 
         public void Execute(object parameter)
         {
-            ExamsCSVExporter.ExportExams(@"C:\Temp\export.csv", exams);
+            IExamsExporter examsCSVExporter = new ExamsCSVExporter();
+            examsCSVExporter.Export(@"C:\Temp\export.csv", exams);
         }
 
         public event EventHandler CanExecuteChanged;

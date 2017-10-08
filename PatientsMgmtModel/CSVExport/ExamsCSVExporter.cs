@@ -5,9 +5,9 @@ using CsvHelper;
 namespace PatientsMgmtModel.CSVExport
 {
     //Uses CSVHelper library: https://joshclose.github.io/CsvHelper/
-    public static class ExamsCSVExporter
+    public class ExamsCSVExporter : IExamsExporter
     {
-        public static void ExportExams(string filePath, IEnumerable<Exam> exams)
+        public void Export(string filePath, IEnumerable<Exam> exams)
         {
             ExamsForCSVExchange examsForCsvExchange = new ExamsForCSVExchange(exams);
             using (StreamWriter streamWriter = new StreamWriter(filePath))
