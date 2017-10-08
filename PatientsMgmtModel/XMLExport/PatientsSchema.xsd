@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+
+  <xs:element name="exams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="exam" type="examType"
+                     minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+
+
+  <xs:complexType name="examType">
+    <xs:sequence>
+      <xs:element name="patient" type="patientType" />
+      <xs:element name="physician" type="physicianType" />
+      <xs:element name="report" type="reportType" />
+    </xs:sequence>
+    <xs:attribute name="Date" type="xs:date" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="patientType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="physicianType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="reportType">
+    <xs:sequence>
+      <xs:element name="report" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
